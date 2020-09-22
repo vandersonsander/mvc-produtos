@@ -1,12 +1,28 @@
 
 public class Endereco {
 	/* numero, rua, bairro, complemento, cidade, estado */
+	private int idEndereco;
 	private String numero;
 	private String rua;
 	private String bairro;
 	private String complemento;
 	private String cidade;
 	private String estado;
+	
+	public Endereco(int idEndereco, String numero, String rua, String bairro, String complemento,
+			String cidade, String estado) {
+		this.idEndereco = idEndereco;
+		this.numero = numero;
+		this.rua = rua;
+		this.bairro = bairro;
+		this.complemento = complemento;
+		this.cidade = cidade;
+		this.estado = estado;
+	}
+	
+	public int getIdEndereco() {
+		return idEndereco;
+	}
 	
 	public String getNumero() {
 		return numero;

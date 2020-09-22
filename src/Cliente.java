@@ -2,10 +2,23 @@ import java.time.LocalDate;
 
 public class Cliente {
 	/* nome, cpf, rg, dataNascimento*/
+	private int idCliente;
 	private String nome;
 	private String cpf;
 	private String rg;
 	private LocalDate dataNascimento;
+	
+	public Cliente(int idCliente, String nome, String cpf, String rg, LocalDate dataNascimento) {
+		this.idCliente = idCliente;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.rg = rg;
+		this.dataNascimento = dataNascimento;
+	}
+	
+	public int getIdCliente() {
+		return this.idCliente;
+	}
 	
 	public String getNome() {
 		return nome;

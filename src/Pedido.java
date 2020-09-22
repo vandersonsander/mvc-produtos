@@ -7,6 +7,14 @@ public class Pedido {
 	private double valorTotal;
 	private String statusPedido;
 	
+	public Pedido(String nfe, LocalDate dataNascimento, double valorTotal, String statusPedido) {
+		super();
+		this.nfe = nfe;
+		this.dataNascimento = dataNascimento;
+		this.valorTotal = valorTotal;
+		this.statusPedido = statusPedido;
+	}
+	
 	public String getNfe() {
 		return nfe;
 	}

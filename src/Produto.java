@@ -6,6 +6,14 @@ public class Produto {
 	private int estoque;
 	private double preco;
 	
+	public Produto(String nome, String descricao, int estoque, double preco) {
+		super();
+		this.nome = nome;
+		this.descricao = descricao;
+		this.estoque = estoque;
+		this.preco = preco;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

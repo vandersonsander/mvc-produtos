@@ -4,6 +4,12 @@ public class Telefone {
 	private String ddd;
 	private String nro;
 	
+	public Telefone(String ddd, String nro) {
+		super();
+		this.ddd = ddd;
+		this.nro = nro;
+	}
+	
 	public String getDdd() {
 		return ddd;
 	}
